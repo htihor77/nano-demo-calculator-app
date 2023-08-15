@@ -11,6 +11,7 @@ def add():
     data = request.get_json()
     first = data['first']
     second = data['second']
+    
     result = first + second
     return jsonify({'result': result})
 
